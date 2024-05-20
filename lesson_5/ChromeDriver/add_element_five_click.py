@@ -7,7 +7,7 @@ driver.get(url)
 
 for _ in range(0, 5):
     driver.find_element(
-        By.CSS_SELECTOR, "button[onclick='addElement()']").click()
+        By.CSS_SELECTOR, "div.example button").click()
 
 print(len(driver.find_elements(By.CSS_SELECTOR,
-      "button[onclick='deleteElement()']")))
+      "div#elements button")))
